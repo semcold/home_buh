@@ -1,0 +1,113 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "email": "wfm@mail.ru",
+      "password": "12345678",
+      "name": "Администратор"
+    }
+  ],
+  "bill": {
+    "value": 60000,
+    "currency": "RUB"
+  },
+  "categories": [
+    {
+      "name": "Дом",
+      "capacity": 15000,
+      "id": 1
+    },
+    {
+      "name": "Еда",
+      "capacity": 10000,
+      "id": 2
+    },
+    {
+      "name": "Машина",
+      "capacity": 500,
+      "id": 3
+    }
+  ],
+  "events": [
+    {
+      "id": 1,
+      "type": "income",
+      "amount": 1250,
+      "category": 2,
+      "date": "12.06.2017 19:49:02",
+      "description": "Подарили еду в гостях"
+    },
+    {
+      "id": 2,
+      "type": "outcome",
+      "amount": 1300,
+      "category": 1,
+      "date": "13.06.2017 19:49:02",
+      "description": "Купил посудомоечную машину"
+    },
+    {
+      "type": "income",
+      "amount": 1480,
+      "category": 2,
+      "date": "17.06.2017 14:00:48",
+      "id": 3,
+      "description": "Поход в окей с баллами. Бесплатная еда"
+    },
+    {
+      "type": "outcome",
+      "amount": 2470,
+      "category": 2,
+      "date": "17.06.2017 14:00:58",
+      "id": 4,
+      "description": "Закупка на неделю"
+    },
+    {
+      "type": "outcome",
+      "amount": 4000,
+      "category": 3,
+      "date": "10.06.2017 14:01:58",
+      "id": 5,
+      "description": "Заправка + проход ТО"
+    },
+    {
+      "type": "outcome",
+      "amount": 1200,
+      "category": 3,
+      "date": "02.07.2017 23:28:48",
+      "description": "Test",
+      "id": 6
+    },
+    {
+      "type": "outcome",
+      "amount": 3000,
+      "category": 3,
+      "date": "02.07.2017 23:29:11",
+      "description": "test 2",
+      "id": 7
+    },
+    {
+      "type": "outcome",
+      "amount": 1000,
+      "category": 4,
+      "date": "18.11.2019 00:15:32",
+      "description": "Да нах!",
+      "id": 8
+    },
+    {
+      "type": "income",
+      "amount": 1000,
+      "category": 4,
+      "date": "20.11.2019 19:43:12",
+      "description": "ллл",
+      "id": 9
+    },
+    {
+      "type": "outcome",
+      "amount": 10,
+      "category": 3,
+      "date": "21.09.2020 00:27:41",
+      "description": "развал-схождение",
+      "id": 10
+    }
+  ]
+}

@@ -1,0 +1,28 @@
+<div class="title-block">
+  <h3 class="title pull-left">Страница истории <span class="sparkline bar"></span></h3>
+  <div class="pull-right">
+      <button class="btn-sm btn btn-primary-outline" (click)="openFilter()">
+        <i class="fa fa-filter"></i>
+      </button>
+    </div>
+</div>
+<div *ngIf="!isLoaded" class="text-center">Loading ...</div>
+<div *ngIf="isLoaded">
+  <bus-history-chart [data]="chartData"></bus-history-chart>
+
+  <bus-history-events
+  [categories]="categories"
+  [events]="filteredEvents"
+  ></bus-history-events>
+
+  <div *ngIf = "isFilterVisible">
+      <bus-history-filter 
+      (onFilterApply)="onFilterApply($event)"
+      (onFilterCancel)="onFilterCancel()"
+      [categories]="categories"
+      >
+
+      </bus-history-filter>
+  </div>
+  
+</div>
